@@ -1,0 +1,28 @@
+.titleWrap{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 50px 0;
+    h3 {
+      font-family: "Cormorant", serif;
+      font-size: 80px;
+      font-weight: 200;
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    hr {
+      background-color: #fff;
+      margin: 0;
+      margin-left: 15px;
+      width: 30vw;
+      max-width: 250px;
+    }
+}
+@media (max-width:500px) {
+    .titleWrap{
+        h3{
+            font-size: 45px;
+        }
+    }
+}
