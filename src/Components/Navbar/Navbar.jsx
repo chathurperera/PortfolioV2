@@ -42,7 +42,7 @@ export default function NavBar() {
               
             </li>
             <li>
-              <a href="Chathura_Perera_CV.pdf" target="_blank">
+              <a href="../../Assets/Chathura_Perera_CV.pdf" target="_blank">
                 Resume
               </a>
             </li>
