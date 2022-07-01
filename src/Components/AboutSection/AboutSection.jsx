@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./AboutSection.module.scss";
-import me from "../../Assets/RoundProfileImage.png";
-import logo from "../../Assets/logo.png";
+import me from "@/Assets/RoundProfileImage.png";
+import logo from "@/Assets/logo.png";
 export default function AboutSection() {
   return (
     <section id='about' className={styles.aboutSection}>
