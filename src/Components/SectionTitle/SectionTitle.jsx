@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './sectionTitle.module.scss';
+import styles from './SectionTitle.module.scss';
 export default function SectionTitle(props) {
   return (
     <div className={styles.titleWrap}>
