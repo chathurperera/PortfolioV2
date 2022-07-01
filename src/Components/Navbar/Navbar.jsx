@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
-import logo from "../../../Assets/logo.png";
-import menu from "../../../Assets/menu.png";
-import wrong from "../../../Assets/wrong.png";
+import logo from "../../Assets/logo.png";
+import menu from "../../Assets/menu.png";
+import wrong from "../../Assets/wrong.png";
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
