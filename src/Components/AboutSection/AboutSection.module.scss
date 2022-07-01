@@ -1,0 +1,205 @@
+@mixin section-width {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aboutSection {
+  @include section-width;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 120px 50px;
+  padding-bottom: 0;
+  // background-color: #131517;
+  &Title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Cormorant", serif;
+    h3 {
+      font-size: 80px;
+      font-weight: 200;
+      display: flex;
+      align-items: center;
+    }
+    hr {
+      margin: 0;
+      margin-left: 15px;
+      width: 30vw;
+      background-color: #fff;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 960px) {
+      grid-template-columns: 1fr;
+      &Image {
+        grid-row: 1 / 2;
+      }
+    }
+
+    &Intro {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      p {
+        max-width: 500px;
+        margin-bottom: 1rem;
+        font-size: 25px;
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
+      }
+      .logo {
+        padding-top: 35px;
+        width: 150px;
+      }
+      h4 {
+        font-size: 22px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+    }
+    &TechStack {
+      width: 450px;
+      display: flex;
+      column-gap: 20px;
+      flex-wrap: wrap;
+      p {
+        margin: 0;
+        color: #817666;
+      }
+      ul > li {
+        list-style: none;
+        margin: 5px 0;
+      }
+    }
+    &Image {
+      height: 100%;
+      text-align: center;
+      .imgWrap {
+        border-radius: 5px !important;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+      
+        & > img {
+          height: auto;
+          width: 100%;
+          border-radius: 5px;
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            transform: translate(-10px, -10px);
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+          }
+        }
+      }
+    }
+  }
+
+  .skills {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #81766675;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .listTitle {
+      h3 {
+        font-size: 70px;
+        font-weight: 200;
+      }
+    }
+    .listItems {
+      display: grid;
+      min-width: 600px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+
+      p {
+        margin: 0;
+        color: #937979;
+        position: relative;
+        font-size: 20px;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background: #937979;
+          border-radius: 50%;
+          left: -15px;
+          top: 8px;
+        }
+      }
+    }
+    .borderStyle {
+      border-bottom: 1px solid #817666be;
+    }
+  }
+  .borderHide{
+    border-bottom: none;
+  }
+  .hr {
+    color: #817666;
+    background-color: #817666 !important;
+  }
+}
+@keyframes dash {
+  to {
+    background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+}
+@media (max-width: 560px) {
+  .contentTechStack {
+    width: 100% !important;
+  }
+  .skills{
+    padding: 30px 0 !important;
+  }
+  .aboutSection{
+    padding:50px 20px
+  }
+}
+@media (max-width: 768px) {
+  .aboutSection {
+    .skills {
+      display: block;
+      .listTitle {
+        h3 {
+          font-size: 40px;
+        }
+      }
+      .listItems{
+        padding: 0 30px;
+        min-width: 0;
+        width: 100% !important;
+        grid-template-columns: 1fr 1fr ;
+        width: max-content;
+      p{
+        max-width: max-content;
+      }
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .aboutSectionTitle {
+    h3 {
+      margin-bottom: 50px;
+    }
+  }
+  .contentIntro {
+    padding: 25px 0;
+    p {
+      font-size: 20px !important;
+      max-width: none !important;
+    }
+  }
+}

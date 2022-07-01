@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutSection from '../../Components/AboutSection/AboutSection';
 import CustomCursor from '../../Components/CustomCursor/CustomCursor';
 import HeroSection from '../../Components/HeroSection/HeroSection';
 import NavBar from '../../Components/Navbar/Navbar';
@@ -9,6 +10,7 @@ const MainPage = () => {
       <CustomCursor />
       <NavBar />
       <HeroSection />
+      <AboutSection />
     </div>
   )
 }

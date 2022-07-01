@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './HeroSection.module.scss';
-import scrollTriggerArro from '../../Assets/scrolldownArrow.png'
+import scrollTriggerArrow from '../../Assets/scrolldownArrow.png'
 export default function HeroSection() {
   return (
     <section className={styles.heroSection}>
