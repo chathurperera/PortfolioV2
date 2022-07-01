@@ -6,7 +6,7 @@ import wrong from "../../Assets/wrong.png";
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
-  const [scrollTo,setScrollTo] = useState(null);
+  const [scrollTo, setScrollTo] = useState(null);
 
   const expandMenu = () => {
     setShowMenu((prev) => !prev);
@@ -31,15 +31,13 @@ export default function NavBar() {
             }
           >
             <li onClick={expandMenu}>
-              <a href="#about" >About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              
-              <a href="#work" >Work</a>
+              <a href="#work">Work</a>
             </li>
             <li>
-            <a href="#contact" >Contact</a>
-              
+              <a href="#contact">Contact</a>
             </li>
             <li>
               <a href="Chathura_Perera_CV.pdf" target="_blank">
