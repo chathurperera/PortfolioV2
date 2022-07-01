@@ -1,9 +1,10 @@
 import React from 'react'
+import CustomCursor from '../../Components/CustomCursor/CustomCursor';
 import styles from './MainPage.module.scss';
 const MainPage = () => {
   return (
     <div>
-      <h1 className={styles.title}>Hello there</h1>
+      <CustomCursor />
     </div>
   )
 }
