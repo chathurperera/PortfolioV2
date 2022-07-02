@@ -8,10 +8,10 @@ export default function HeroSection() {
         <h1 className={`${styles.heroSectionTitle} `}>
           Developer devoted to crafting <i>intuitive</i> web experiences
         </h1>
-      {/* <p className={`${styles.scrollTrigger} ${styles.fadeInBottomTrigger}`}>
-        <span className={styles.bgAnimate}>scroll to discover</span>
-        <img className={styles.bounce} src="scrolldownArrow.png" alt="" />
-      </p> */}
+      <p className={`${styles.scrollTrigger} ${styles.fadeInBottomTrigger}`}>
+        <span className={`${styles.bgAnimate} ${styles.bgAnimatedText}`}>scroll to discover</span>
+        <img className={styles.bounce} src={scrollTriggerArrow} alt="" />
+      </p>
       </div>
     </section>
   )

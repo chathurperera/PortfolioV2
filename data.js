@@ -9,6 +9,19 @@ import onboard from "@/Assets/projectMockups/onboard.png";
 
 export const projectData = [
     {
+        name: "Onboard job listing site",
+        techStack: [
+            "HTML",
+            "SCSS Modules",
+            "React.js",
+            "Firebase",
+        ],
+        previewUrl:'https://onboard-webapp.netlify.app/',
+        codeUrl:'https://github.com/chathurperera/onboard',
+        imageUrl:onboard,
+        description: "This is a job listing platform developed with React.js, and I have integrated Firebase authentication for Authenticating users with email or Gmail accounts.Currently im working profile page and the jobs filter functionality"
+    },
+    {
         name: "Netflix Clone App",
         techStack: [
             "HTML",
@@ -21,19 +34,7 @@ export const projectData = [
         imageUrl:netflixMockup,
         description: "This is a clone of Netflix website built using React.JS as a Front-end & Firebase as Back-end.This site has the functionality to authenticate user logins.And also its integrated with stripe payment gateway."
     },
-    {
-        name: "Onboard job listing site",
-        techStack: [
-            "HTML",
-            "SCSS Modules",
-            "React.js",
-            "Firebase",
-        ],
-        previewUrl:'https://onboard-webapp.netlify.app/',
-        codeUrl:'https://github.com/chathurperera/onboard',
-        imageUrl:onboard,
-        description: "This is a job listing platform developed with React.js, and I have integrated Firebase authentication for Authenticating users with email or Gmail accounts."
-    },
+
     {
         name: "Concord Agency landing page",
         techStack: [
