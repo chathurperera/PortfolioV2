@@ -13,8 +13,7 @@ function CustomCursor() {
     const allLinks = document.getElementsByTagName("a");
     const cursorDot = document.getElementById("dot");
     const appCursor = document.getElementById("appCursor");
-    
-    console.log('allLinks',allLinks)
+  
 
     Array.from(allLinks).forEach((link) => {
       link.addEventListener("mouseover", () => {

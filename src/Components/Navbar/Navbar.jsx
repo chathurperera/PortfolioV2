@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Navbar.module.scss";
 import logo from "../../Assets/logo.png";
 import menu from "../../Assets/menu.png";
@@ -8,8 +8,13 @@ export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
   const [scrollTo, setScrollTo] = useState(null);
 
+  const menuCheckboxRef = useRef();
   const expandMenu = () => {
     setShowMenu((prev) => !prev);
+    const checkBoxValue = menuCheckboxRef.current.checked;
+    checkBoxValue
+      ? (menuCheckboxRef.current.checked = false)
+      : (menuCheckboxRef.current.checked = true);
   };
 
   return (
@@ -33,13 +38,13 @@ export default function NavBar() {
             <li onClick={expandMenu}>
               <a href="#about">About</a>
             </li>
-            <li>
+            <li onClick={expandMenu}>
               <a href="#work">Work</a>
             </li>
-            <li>
+            <li onClick={expandMenu}>
               <a href="#contact">Contact</a>
             </li>
-            <li>
+            <li onClick={expandMenu}>
               <a href="Chathura_Perera_CV.pdf" target="_blank">
                 Resume
               </a>
@@ -47,7 +52,7 @@ export default function NavBar() {
             <div className={styles.footerSocial}>
               <div className={styles.footerSocialIcon}>
                 <a
-                  className={!showMenu && `${styles.disableLink}`}
+                  className={!showMenu ? `${styles.disableLink}` : undefined}
                   href="https://www.linkedin.com/in/chathuraperera/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -70,7 +75,7 @@ export default function NavBar() {
               </div>
               <div className={styles.footerSocialIcon}>
                 <a
-                  className={!showMenu && `${styles.disableLink}`}
+                  className={!showMenu ? `${styles.disableLink}` : undefined}
                   href="https://github.com/chathurperera"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -91,7 +96,7 @@ export default function NavBar() {
               </div>
               <div className={styles.footerSocialIcon}>
                 <a
-                  className={!showMenu && `${styles.disableLink}`}
+                  className={!showMenu ? `${styles.disableLink}` : undefined}
                   href="https://twitter.com/VictorChathura"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -112,7 +117,7 @@ export default function NavBar() {
               </div>
               <div className={styles.footerSocialIcon}>
                 <a
-                  className={!showMenu && `${styles.disableLink}`}
+                  className={!showMenu ? `${styles.disableLink}` : undefined}
                   href="https://www.instagram.com/_.gattx.vii/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -141,10 +146,11 @@ export default function NavBar() {
           type="checkbox"
           id="checkbox3"
           className={`${styles.checkbox3} ${styles.visuallyHidden}`}
+          ref={menuCheckboxRef}
         />
         <label htmlFor="checkbox3" className={`${styles.label} ${styles.hide}`}>
           <div
-            onClick={expandMenu}
+            onClick={() => setShowMenu(prevState => !prevState )}
             className={`${styles.hamburger} ${styles.hamburger3}`}
           >
             <span className={`${styles.bar} ${styles.bar1}`}></span>
