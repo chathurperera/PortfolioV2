@@ -18,7 +18,6 @@ function CustomCursor() {
     Array.from(allLinks).forEach((link) => {
       link.addEventListener("mouseover", () => {
         cursorDot.classList.add("linkGrow");
-        console.log('cursorDot.classList entered',cursorDot.classList) 
         cursorDot.style.transform = "scale(7)";
         cursorDot.style.opacity = ".3"; 
       });
@@ -26,20 +25,10 @@ function CustomCursor() {
     Array.from(allLinks).forEach((link) => {
       link.addEventListener("mouseleave", () => {
         cursorDot.classList.remove("linkGrow");
-        console.log('cursorDot.classList left',cursorDot.classList);
-        // cursorDot.style.width = "10px";
-        // cursorDot.style.height = "10px"; 
         cursorDot.style.opacity = "1"; 
         cursorDot.style.transform = "scale(1)";
       });
     });
-
-    // return allLinks.forEach((element) => {
-    //   element.addEventListener("mouseleave", () => {
-    //     cursorDot.style.mixBlendMode = "normal";
-    //     cursorDot.style.transform = "scale(1)";
-    //   });
-    // });
   }, []);
 
   return (
