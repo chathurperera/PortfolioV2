@@ -22,12 +22,12 @@ export default function AboutSection() {
             and trying out new recipes.
           </p>
           <div className={styles.logo}>
-            <img className="logo-image" src={logo} alt="logo" />
+            <img className="logo-image" src={logo} alt="logo" loading="lazy" />
           </div>
         </div>
         <div className={styles.contentImage}>
           <div className={styles.imgWrap}>
-            <img src={me} alt="chathura perera" />
+            <img src={me} alt="chathura perera" loading="lazy" />
           </div>
         </div>
       </div>

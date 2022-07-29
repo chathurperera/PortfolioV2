@@ -21,7 +21,7 @@ export default function NavBar() {
     <header className={styles.header}>
       <div className={styles.headerWrap}>
         <div className={styles.logo}>
-          <img className="logo-image" src={logo} alt="logo" />
+          <img className="logo-image" src={logo} alt="logo" loading="lazy" />
         </div>
         <nav
           className={

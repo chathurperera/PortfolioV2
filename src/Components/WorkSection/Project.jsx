@@ -22,7 +22,7 @@ export default function Project({
       <div className={styles.project}>
         <div className={styles.projectImage}>
           <div className={styles.imageWrapper}>
-            <img src={imageUrl} alt="" />
+            <img src={imageUrl} alt="" loading="lazy" />
           </div>
         </div>
         <div className={styles.projectContent}>
