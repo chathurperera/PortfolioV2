@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className={styles.contentIntro}>
           <p>
             My name is Chathura Perera, Im a self-taught frontend developer based
-            in Colombo.Since I&apos;ve been interested in creating websites for
+            in Colombo. Since I&apos;ve been interested in creating websites for
             several years, I&apos;ve acquired a great deal of professional experience
             under the guidance of senior software engineers.
           </p>
