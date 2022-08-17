@@ -30,7 +30,8 @@
         border-radius: 30px;
         font-size: 18px;
         font-family: "Nunito Sans", sans-serif;
-        cursor: pointer;
+        // cursor: pointer;
+        cursor: none;
         transition: all ease 0.3s;
         &:focus {
           color: #fff;

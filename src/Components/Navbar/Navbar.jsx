@@ -45,7 +45,7 @@ export default function NavBar() {
               <a href="#contact">Contact</a>
             </li>
             <li onClick={expandMenu}>
-              <a href="Chathura_Perera_CV.pdf" target="_blank">
+              <a w>
                 Resume
               </a>
             </li>

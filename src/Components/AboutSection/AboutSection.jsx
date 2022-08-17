@@ -22,7 +22,8 @@ export default function AboutSection() {
             and trying out new recipes.
           </p>
           <div className={styles.logo}>
-            <img className="logo-image" src={logo} alt="logo" loading="lazy" />
+            <a href="Chathura_Perera_CV.pdf" target="_blank">Download Resume 📄</a>
+            {/* <img className="logo-image" src={logo} alt="logo" loading="lazy" /> */}
           </div>
         </div>
         <div className={styles.contentImage}>
