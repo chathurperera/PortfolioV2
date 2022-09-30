@@ -137,16 +137,20 @@
         color: #937979;
         position: relative;
         font-size: 20px;
-        &::before {
-          content: "";
-          position: absolute;
-          width: 6px;
-          height: 6px;
-          background: #937979;
-          border-radius: 50%;
-          left: -15px;
-          top: 8px;
+        transition: all ease .25s;
+        &:hover{
+          color: #fff;
         }
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   width: 6px;
+        //   height: 6px;
+        //   background: #937979;
+        //   border-radius: 50%;
+        //   left: -15px;
+        //   top: 8px;
+        // }
       }
     }
     .borderStyle {

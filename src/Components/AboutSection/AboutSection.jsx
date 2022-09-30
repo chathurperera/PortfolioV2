@@ -48,6 +48,10 @@ export default function AboutSection() {
           <p>Vue.js</p>
           <p>Next.js</p>
           <p>Nuxt.js</p>
+          <p>Node.js</p>
+          <p>MongoDB</p>
+          <p>Mongoose</p>
+          <p>Express.js</p>
           <p>MySQL</p>
         </div>
       </div>
