@@ -4,26 +4,30 @@ import me from "@/Assets/RoundProfileImage.png";
 import logo from "@/Assets/logo.png";
 export default function AboutSection() {
   return (
-    <section id='about' className={styles.aboutSection}>
+    <section id="about" className={styles.aboutSection}>
       <div className={styles.content}>
         <div className={styles.contentIntro}>
           <p>
-            My name is Chathura Perera, Im a self-taught frontend developer based
-            in Colombo. Since I&apos;ve been interested in creating websites for
-            several years, I&apos;ve acquired a great deal of professional experience
-            under the guidance of senior software engineers.
+            Hi Im chathura , I'm a self-taught developer with experience in
+            developing new features from ideation to production, implementation
+            of wireframes and design flows into high-performance web
+            applications. I take into consideration the user experience while
+            writing reusable and efficient code.
           </p>
           <p>
-            As a developer, I&apos;ve worked on a variety of projects from UI
-            development to API integrations.
+            I passionately combine good design, technology, and innovation in
+            all my projects, which I like to accompany from the first idea to
+            release. Currently, I'm focusing on MERN Stack development while
+            expanding my skills as a software engineer.
           </p>
           <p>
-            While I spend most of my time coding, I also enjoy working out
-            and trying out new recipes.
+            While I spend most of my time coding, I also enjoy working out and
+            trying out new recipes.
           </p>
-          <div className={styles.logo}>
-            
-            <a href="Chathura_Perera_CV.pdf" target="_blank">Download Resume 📄</a>
+          <div className={styles.resume}>
+            <a href="Chathura_Perera_CV.pdf" target="_blank">
+              Checkout my Resume 👀
+            </a>
             {/* <img className="logo-image" src={logo} alt="logo" loading="lazy" /> */}
           </div>
         </div>

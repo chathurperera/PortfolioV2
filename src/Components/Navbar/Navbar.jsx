@@ -45,7 +45,7 @@ export default function NavBar() {
               <a href="#contact">Contact</a>
             </li>
             <li onClick={expandMenu}>
-              <a w>
+              <a href="Chathura_Perera_CV.pdf" target="_blank">
                 Resume
               </a>
             </li>
@@ -150,7 +150,7 @@ export default function NavBar() {
         />
         <label htmlFor="checkbox3" className={`${styles.label} ${styles.hide}`}>
           <div
-            onClick={() => setShowMenu(prevState => !prevState )}
+            onClick={() => setShowMenu((prevState) => !prevState)}
             className={`${styles.hamburger} ${styles.hamburger3}`}
           >
             <span className={`${styles.bar} ${styles.bar1}`}></span>
