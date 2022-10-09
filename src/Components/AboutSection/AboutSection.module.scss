@@ -31,6 +31,7 @@
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative ;
     @media (max-width: 960px) {
       grid-template-columns: 1fr;
       &Image {
@@ -39,29 +40,52 @@
     }
 
     &Intro {
-      position: relative;
+      padding-top: 80px;
       display: flex;
       flex-direction: column;
       height: 100%;
       justify-content: center;
+  
       p {
         max-width: 500px;
         margin-bottom: 1rem;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.4;
         font-family: "Inter", sans-serif;
         font-weight: 200;
+        color: rgb(197, 193, 193);
+        &:nth-child(3){
+          margin-bottom: 60px;
+        }
       }
       .resume {
         padding: 5px 0;
-        margin-top: 10px;
+        margin-top: 35px;
         font-family: "Inter", sans-serif;
         width: max-content;
         a{
+          font-weight: 300;
+          position: relative;
           font-size: 20px;
           color: rgb(255, 255, 255);
-          
+          &::before{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #fff;
+          }
         }
+      }
+      h3{
+        font-size: 40px;
+        max-width: 600px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 35px;
+
       }
       h4 {
         font-size: 22px;
@@ -85,15 +109,18 @@
     }
     &Image {
       height: 100%;
+      position: relative;
       text-align: center;
+
       .imgWrap {
+        top: 10px;
+        position: sticky;
         border-radius: 5px !important;
-        height: 100%;
-        width: 80%;
+        // height: 100%;
+        width: 500px;
         margin: 0 auto;
-      
+        
         & > img {
-          height: auto;
           width: 100%;
           border-radius: 5px;
           -webkit-filter: grayscale(100%);
@@ -110,17 +137,18 @@
   }
 
   .skills {
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #81766675;
+    padding-top: 60px;
+    // padding: 100px 0;
+    // display: flex;
+    // justify-content: space-between;
+    // border-bottom: 1px solid #81766675;
     @media (max-width: 768px) {
       flex-direction: column;
       gap: 20px;
     }
     .listTitle {
       h3 {
-        font-size: 70px;
+        font-size: 40px;
         font-weight: 200;
       }
     }
@@ -132,10 +160,10 @@
 
       p {
         margin: 0;
-        color: #937979;
+        color: #c7c7c7;
         position: relative;
         font-size: 20px;
-        transition: all ease .25s;
+        transition: all ease .2s;
         &:hover{
           color: #fff;
         }
