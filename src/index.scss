@@ -1,3 +1,15 @@
+@import '../src/fonts/satoshi.scss';
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('truetype'),
+       url('../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.woff') format('woff'),
+       url('../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('truetype');
+       font-weight: 300 900;
+       font-display: swap;
+       font-style: normal;
+}
+
 html,
 body {
   padding: 0;
@@ -55,3 +67,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
