@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./AboutSection.module.scss";
-import me from "@/Assets/RoundProfileImage.png";
+import me from "@/Assets/chathuraperera.png";
 import logo from "@/Assets/logo.png";
 export default function AboutSection() {
   return (

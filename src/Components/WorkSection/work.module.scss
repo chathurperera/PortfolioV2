@@ -10,29 +10,27 @@
   position: relative;
   font-family: "Nunito Sans", sans-serif;
   .filter {
+    // border: 1px solid #fff;
     display: flex;
     max-width: 600px;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     margin-bottom: 50px;
     flex-wrap: wrap;
     &Pill {
-      text-align: center;
-      min-width: 120px;
+      // border: 1px solid #fff;
+      // min-width: 120px;
       button {
         border: none;
         color: rgba(255, 255, 255, 0.411);
         background: transparent;
         font-weight: 500;
-        padding: 8px 17px;
         border-radius: 30px;
         font-size: 18px;
-        font-family: "Nunito Sans", sans-serif;
-        // cursor: pointer;
+        font-family: "Source Code Pro", monospace;
         cursor: none;
-        transition: all ease 0.3s;
+        transition: all ease 0.2s;
         &:focus {
           color: #fff;
         }
