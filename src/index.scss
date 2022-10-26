@@ -1,13 +1,24 @@
-@import '../src/fonts/satoshi.scss';
+@import "../src/fonts/satoshi.scss";
 
 @font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('truetype'),
-       url('../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.woff') format('woff'),
-       url('../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('truetype');
-       font-weight: 300 900;
-       font-display: swap;
-       font-style: normal;
+  font-family: "Satoshi-Variable";
+  src: url("../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf")
+      format("truetype"),
+    url("../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.woff")
+      format("woff"),
+    url("../src/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf")
+      format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -17,7 +28,8 @@ body {
   background: #02070c;
   color: #fff;
   scroll-behavior: smooth !important;
-  * , button {
+  *,
+  button {
     cursor: none;
     &:hover {
       cursor: none;
@@ -30,14 +42,9 @@ a {
   text-decoration: none;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body {
+  // overflow-x: hidden !important;
   overscroll-behavior-y: none;
   margin: 0;
 }
@@ -51,20 +58,19 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1de; 
+  background: #f1f1f1de;
   border-radius: 5px;
-  margin: 5px ;
+  margin: 5px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1515156c; 
+  background: #1515156c;
   border-radius: 5px;
   height: 100px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-

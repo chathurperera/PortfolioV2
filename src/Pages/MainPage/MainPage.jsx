@@ -8,14 +8,14 @@ import WorkSection from '../../Components/WorkSection/WorkSection';
 
 const MainPage = () => {
   return (
-    <div>
+    <>
       <CustomCursor />
       <NavBar />
       <HeroSection />
       <AboutSection />
       <WorkSection />
       <Footer />
-    </div>
+    </>
   )
 }
 

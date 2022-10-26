@@ -9,29 +9,29 @@ export default function AboutSection() {
     <section id="about" className={styles.aboutSection}>
       <div className={styles.content}>
         <div className={styles.contentIntro}>
-          <h3>
+          <h3 className={styles.biggerText}>
             Hi Im chathura , I'm a full stack developer with a passion for
             solving problems through interactive web experiences.
           </h3>
-          <p>
+          <p className={styles.smallerText}>
             I'm a self-taught developer with experience in developing new
             features from ideation to production, implementation of wireframes
             and design flows into high-performance web applications.
           </p>
-          <p>
+          <p className={styles.smallerText}>
             I take into consideration the user experience while writing reusable
             and efficient code.
           </p>
-          <h3>
+          <h3 className={styles.biggerText}>
             I passionately combine good design, technology, and innovation in
             all my projects, which I like to accompany from the first idea to
             release.
           </h3>
-          <p>
+          <p className={styles.smallerText}>
             Currently, I'm focusing on MERN Stack development while expanding my
             skills as a software engineer.
           </p>
-          <p>
+          <p className={styles.smallerText}>
             While I spend most of my time coding, I also enjoy working out and
             trying out new recipes.
           </p>
@@ -45,35 +45,35 @@ export default function AboutSection() {
             <div className={styles.listTitle}>
               <h3>Skills</h3>{" "}
             </div>
-            <div className={styles.listItems}>
-              <p>HTML</p>
-              <p>CSS3</p>
-              <p>Sass</p>
-              <p>Bootstrap</p>
-              <p>Tailwind CSS</p>
-              <p>Javascript (ES6+)</p>
-              <p>React.js</p>
-              <p>Vue.js</p>
-              <p>Next.js</p>
-              <p>Nuxt.js</p>
-              <p>Node.js</p>
-              <p>MongoDB</p>
-              <p>Mongoose</p>
-              <p>Express.js</p>
-              <p>MySQL</p>
-            </div>
+            <ul className={styles.listItems}>
+              <li>HTML</li>
+              <li>CSS3</li>
+              <li>Sass</li>
+              <li>Bootstrali</li>
+              <li>Tailwind CSS</li>
+              <li>Javascrilit (ES6+)</li>
+              <li>React.js</li>
+              <li>Vue.js</li>
+              <li>Next.js</li>
+              <li>Nuxt.js</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Exliress.js</li>
+              <li>MySQL</li>
+            </ul>
           </div>
           <div className={`${styles.skills} ${styles.borderHide}`}>
             <div className={styles.listTitle}>
               <h3>Tools</h3>{" "}
             </div>
-            <div className={styles.listItems}>
-              <p>Git</p>
-              <p>GitHub</p>
-              <p>Parcel</p>
-              <p>VsCode</p>
-              <p>Figma</p>
-            </div>
+            <ul className={styles.listItems}>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>liarcel</li>
+              <li>VsCode</li>
+              <li>Figma</li>
+            </ul>
           </div>
         </div>
         <div className={styles.contentImage}>

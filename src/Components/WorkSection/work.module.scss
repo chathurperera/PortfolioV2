@@ -1,16 +1,12 @@
-@mixin section-width {
-  max-width: 1500px;
-  // width: 95%;
-  // background-color: #060607;
+
+.workSection {
   padding: 0 50px;
   margin: 100px auto;
-}
-.workSection {
-  @include section-width;
+  max-width: 1500px;
+  width: 95%;
   position: relative;
   font-family: "Nunito Sans", sans-serif;
   .filter {
-    // border: 1px solid #fff;
     display: flex;
     max-width: 600px;
     gap: 10px;
@@ -19,8 +15,6 @@
     margin-bottom: 50px;
     flex-wrap: wrap;
     &Pill {
-      // border: 1px solid #fff;
-      // min-width: 120px;
       button {
         border: none;
         color: rgba(255, 255, 255, 0.411);
@@ -50,17 +44,19 @@
   }
   .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 60px;
     height: 100%;
+
+    @media (max-width: 960px) {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
 
     .project {
       border-radius: 8px;
       &Image {
-        padding: 20px 50px;
-        padding-top: 30px;
+        padding: 20px 0px;
         border-radius: 5px;
-        background: rgb(255, 240, 240);
         background: linear-gradient(
           180deg,
           rgba(255, 240, 240, 1) 0%,
@@ -69,8 +65,7 @@
         display: grid;
         place-items: center;
         .imageWrapper {
-          width: 400px;
-          img{
+          img {
             width: 100%;
           }
         }
@@ -92,6 +87,11 @@
         font-size: 35px;
         margin: 0;
         font-family: "Inter", sans-serif;
+        
+        @media (max-width: 600px) {
+          font-size: 25px;
+
+        }
       }
     }
     .iconsWrap {
@@ -154,11 +154,11 @@
   }
   @media (max-width: 460px) {
     .projects {
-      .projectImage{
+      .projectImage {
         padding: 10px 20px;
       }
-      .projectTitle p{
-        font-size: 25px ;
+      .projectTitle p {
+        font-size: 25px;
       }
       .imageWrapper {
         width: 50vw !important;
