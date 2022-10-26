@@ -31,7 +31,7 @@
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative ;
+    position: relative;
     @media (max-width: 960px) {
       grid-template-columns: 1fr;
       &Image {
@@ -45,8 +45,8 @@
       flex-direction: column;
       height: 100%;
       justify-content: center;
-      font-family: 'Satoshi-Variable';
-  
+      font-family: "Satoshi-Variable";
+
       p {
         max-width: 500px;
         margin-bottom: 1rem;
@@ -55,7 +55,7 @@
         // font-family: "Inter", sans-serif;
         font-weight: 200;
         color: rgb(197, 193, 193);
-        &:nth-child(3){
+        &:nth-child(3) {
           margin-bottom: 60px;
         }
       }
@@ -64,29 +64,26 @@
         margin-top: 35px;
         font-family: "Inter", sans-serif;
         width: max-content;
-        a{
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+        transition: all ease .3s;
+        &:hover{
+          gap: 15px;
+        }
+        a {
           font-weight: 300;
           position: relative;
-          font-size: 20px;
+          font-size: 18px;
           color: rgb(255, 255, 255);
-          &::before{
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background-color: #fff;
-          }
         }
       }
-      h3{
+      h3 {
         font-size: 40px;
         max-width: 600px;
         font-weight: 400;
         line-height: 1.2;
         margin-bottom: 35px;
-
       }
       h4 {
         font-size: 22px;
@@ -101,11 +98,12 @@
       flex-wrap: wrap;
       p {
         margin: 0;
-        color: #817666;
+        color: #817666e5;
       }
       ul > li {
         list-style: none;
         margin: 5px 0;
+        font-family: "Source Code Pro", monospace;
       }
     }
     &Image {
@@ -120,12 +118,12 @@
         // height: 100%;
         width: 500px;
         margin: 0 auto;
-        
+
         & > img {
           width: 100%;
           border-radius: 50%;
           transition: all 0.4s ease-in-out;
-          
+
           &:hover {
             // transform: translate(-10px, -10px);
             -webkit-filter: grayscale(0%);
@@ -138,10 +136,6 @@
 
   .skills {
     padding-top: 60px;
-    // padding: 100px 0;
-    // display: flex;
-    // justify-content: space-between;
-    // border-bottom: 1px solid #81766675;
     @media (max-width: 768px) {
       flex-direction: column;
       gap: 20px;
@@ -162,28 +156,20 @@
         margin: 0;
         color: #c7c7c7;
         position: relative;
+        width: max-content;
         font-size: 20px;
-        transition: all ease .2s;
-        &:hover{
+        transition: all ease 0.2s;
+        font-family: "Source Code Pro", monospace;
+        &:hover {
           color: #fff;
         }
-        // &::before {
-        //   content: "";
-        //   position: absolute;
-        //   width: 6px;
-        //   height: 6px;
-        //   background: #937979;
-        //   border-radius: 50%;
-        //   left: -15px;
-        //   top: 8px;
-        // }
       }
     }
     .borderStyle {
       border-bottom: 1px solid #817666be;
     }
   }
-  .borderHide{
+  .borderHide {
     border-bottom: none;
   }
   .hr {
@@ -200,11 +186,11 @@
   .contentTechStack {
     width: 100% !important;
   }
-  .skills{
+  .skills {
     padding: 30px 0 !important;
   }
-  .aboutSection{
-    padding:50px 20px
+  .aboutSection {
+    padding: 50px 20px;
   }
 }
 @media (max-width: 768px) {
@@ -216,15 +202,15 @@
           font-size: 40px;
         }
       }
-      .listItems{
+      .listItems {
         padding: 0 30px;
         min-width: 0;
         width: 100% !important;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         width: max-content;
-      p{
-        max-width: max-content;
-      }
+        p {
+          max-width: max-content;
+        }
       }
     }
   }

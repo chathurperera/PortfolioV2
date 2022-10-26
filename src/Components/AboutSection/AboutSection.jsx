@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./AboutSection.module.scss";
 import me from "@/Assets/chathuraperera.png";
 import logo from "@/Assets/logo.png";
+import nextIcon from '@/Assets/right.png'
+
 export default function AboutSection() {
   return (
     <section id="about" className={styles.aboutSection}>
@@ -37,7 +39,7 @@ export default function AboutSection() {
             <a href="Chathura_Perera_CV.pdf" target="_blank">
               Checkout my Resume
             </a>
-            {/* <img className="logo-image" src={logo} alt="logo" loading="lazy" /> */}
+           <img src={nextIcon} alt="next icon" />
           </div>
           <div className={styles.skills}>
             <div className={styles.listTitle}>
