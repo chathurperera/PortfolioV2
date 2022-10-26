@@ -45,13 +45,14 @@
       flex-direction: column;
       height: 100%;
       justify-content: center;
+      font-family: 'Satoshi-Variable';
   
       p {
         max-width: 500px;
         margin-bottom: 1rem;
         font-size: 22px;
         line-height: 1.4;
-        font-family: "Inter", sans-serif;
+        // font-family: "Inter", sans-serif;
         font-weight: 200;
         color: rgb(197, 193, 193);
         &:nth-child(3){
@@ -123,9 +124,8 @@
         & > img {
           width: 100%;
           border-radius: 50%;
-          -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
           transition: all 0.4s ease-in-out;
+          
           &:hover {
             // transform: translate(-10px, -10px);
             -webkit-filter: grayscale(0%);

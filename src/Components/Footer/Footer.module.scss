@@ -96,44 +96,11 @@
   .copyright{
     position: absolute;
     bottom: -110px;
-  
+    
     p{
+      font-family: 'Satoshi-Variable';
       position: static;
       font-size: 14px;
     }
   }
   
-  .bgAnimate {
-    animation: bg-animation 8s infinite;
-    animation-delay: 2s;
-  }
-  @keyframes bg-animation {
-    0% {
-      background-position: right;
-    }
-    50% {
-      background-position: left;
-    }
-    100% {
-      background-position: left;
-    }
-  }
-  @media (max-width:650px) {
-  
-    .footerContent{
-      a{
-        font-size: 20px;
-      }
-      .footerHeading{
-        font-size: 50px;
-      }
-    }
-  }
-  @media (max-width:500px) {
-    .footerContent{
-      .emailText{
-        font-size: 1.3rem;
-      }
-      
-    }
-  }
