@@ -31,6 +31,7 @@
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
     @media (max-width: 960px) {
       grid-template-columns: 1fr;
       &Image {
@@ -39,29 +40,50 @@
     }
 
     &Intro {
-      position: relative;
+      padding-top: 80px;
       display: flex;
       flex-direction: column;
       height: 100%;
       justify-content: center;
+      font-family: "Satoshi-Variable";
+
       p {
         max-width: 500px;
         margin-bottom: 1rem;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.4;
-        font-family: "Inter", sans-serif;
+        // font-family: "Inter", sans-serif;
         font-weight: 200;
+        color: rgb(197, 193, 193);
+        &:nth-child(3) {
+          margin-bottom: 60px;
+        }
       }
       .resume {
         padding: 5px 0;
-        margin-top: 10px;
+        margin-top: 35px;
         font-family: "Inter", sans-serif;
         width: max-content;
-        a{
-          font-size: 20px;
-          color: rgb(255, 255, 255);
-          
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+        transition: all ease .3s;
+        &:hover{
+          gap: 15px;
         }
+        a {
+          font-weight: 300;
+          position: relative;
+          font-size: 18px;
+          color: rgb(255, 255, 255);
+        }
+      }
+      h3 {
+        font-size: 40px;
+        max-width: 600px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 35px;
       }
       h4 {
         font-size: 22px;
@@ -76,31 +98,34 @@
       flex-wrap: wrap;
       p {
         margin: 0;
-        color: #817666;
+        color: #817666e5;
       }
       ul > li {
         list-style: none;
         margin: 5px 0;
+        font-family: "Source Code Pro", monospace;
       }
     }
     &Image {
       height: 100%;
+      position: relative;
       text-align: center;
+
       .imgWrap {
+        top: 70px;
+        position: sticky;
         border-radius: 5px !important;
-        height: 100%;
-        width: 80%;
+        // height: 100%;
+        width: 500px;
         margin: 0 auto;
-      
+
         & > img {
-          height: auto;
           width: 100%;
-          border-radius: 5px;
-          -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+          border-radius: 50%;
           transition: all 0.4s ease-in-out;
+
           &:hover {
-            transform: translate(-10px, -10px);
+            // transform: translate(-10px, -10px);
             -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
           }
@@ -110,17 +135,14 @@
   }
 
   .skills {
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #81766675;
+    padding-top: 60px;
     @media (max-width: 768px) {
       flex-direction: column;
       gap: 20px;
     }
     .listTitle {
       h3 {
-        font-size: 70px;
+        font-size: 40px;
         font-weight: 200;
       }
     }
@@ -132,30 +154,22 @@
 
       p {
         margin: 0;
-        color: #937979;
+        color: #c7c7c7;
         position: relative;
+        width: max-content;
         font-size: 20px;
-        transition: all ease .25s;
-        &:hover{
+        transition: all ease 0.2s;
+        font-family: "Source Code Pro", monospace;
+        &:hover {
           color: #fff;
         }
-        // &::before {
-        //   content: "";
-        //   position: absolute;
-        //   width: 6px;
-        //   height: 6px;
-        //   background: #937979;
-        //   border-radius: 50%;
-        //   left: -15px;
-        //   top: 8px;
-        // }
       }
     }
     .borderStyle {
       border-bottom: 1px solid #817666be;
     }
   }
-  .borderHide{
+  .borderHide {
     border-bottom: none;
   }
   .hr {
@@ -172,11 +186,11 @@
   .contentTechStack {
     width: 100% !important;
   }
-  .skills{
+  .skills {
     padding: 30px 0 !important;
   }
-  .aboutSection{
-    padding:50px 20px
+  .aboutSection {
+    padding: 50px 20px;
   }
 }
 @media (max-width: 768px) {
@@ -188,15 +202,15 @@
           font-size: 40px;
         }
       }
-      .listItems{
+      .listItems {
         padding: 0 30px;
         min-width: 0;
         width: 100% !important;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         width: max-content;
-      p{
-        max-width: max-content;
-      }
+        p {
+          max-width: max-content;
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
 import { React, useEffect } from "react";
 import styles from "./work.module.scss";
+
 function Filter({ projects, setFiltered, setActiveSkill, activeSkill }) {
   useEffect(() => {
     if (activeSkill === "All") {
@@ -23,16 +24,19 @@ function Filter({ projects, setFiltered, setActiveSkill, activeSkill }) {
           All
         </button>
       </div>
+      /
       <div className={styles.filterPill}>
         <button onClick={() => setActiveSkill("Tailwind CSS")} tabIndex="2">
           Tailwind CSS
         </button>
       </div>
+      /
       <div className={styles.filterPill}>
         <button onClick={() => setActiveSkill("React.js")} tabIndex="2">
           React.js
         </button>
       </div>
+      /
       <div className={styles.filterPill}>
         <button onClick={() => setActiveSkill("Next.js")} tabIndex="2">
           Next.js
