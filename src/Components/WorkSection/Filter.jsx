@@ -10,13 +10,9 @@ function Filter({ projects, setFiltered, setActiveSkill, activeSkill }) {
     const filtered = projects.filter((project) => {
       return project.techStack.includes(activeSkill);
     });
-    console.log("filtered", filtered);
-    console.log("activeSkill", activeSkill);
     setFiltered(filtered);
   }, [activeSkill]);
-  function clickme() {
-    console.log("clicked");
-  }
+  
   return (
     <div className={styles.filter}>
       <div className={`${styles.filterPill} `}>
@@ -40,6 +36,12 @@ function Filter({ projects, setFiltered, setActiveSkill, activeSkill }) {
       <div className={styles.filterPill}>
         <button onClick={() => setActiveSkill("Next.js")} tabIndex="2">
           Next.js
+        </button>
+      </div>
+      /
+      <div className={styles.filterPill}>
+        <button onClick={() => setActiveSkill("Node.js")} tabIndex="2">
+          Node.js
         </button>
       </div>
       {/* <div className={styles.filterPill}>

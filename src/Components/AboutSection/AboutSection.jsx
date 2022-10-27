@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AboutSection.module.scss";
 import me from "@/Assets/chathuraperera.png";
 import logo from "@/Assets/logo.png";
-import nextIcon from '@/Assets/right.png'
+import nextIcon from "@/Assets/right.png";
 
 export default function AboutSection() {
   return (
@@ -39,19 +39,17 @@ export default function AboutSection() {
             <a href="Chathura_Perera_CV.pdf" target="_blank">
               Checkout my Resume
             </a>
-           <img src={nextIcon} alt="next icon" />
+            <img src={nextIcon} alt="next icon" />
           </div>
           <div className={styles.skills}>
-            <div className={styles.listTitle}>
-              <h3>Skills</h3>{" "}
-            </div>
+            <h3 className={styles.listTitle}>Skills</h3>{" "}
             <ul className={styles.listItems}>
               <li>HTML</li>
               <li>CSS3</li>
               <li>Sass</li>
-              <li>Bootstrali</li>
+              <li>Bootstrap</li>
               <li>Tailwind CSS</li>
-              <li>Javascrilit (ES6+)</li>
+              <li>Javascript (ES6+)</li>
               <li>React.js</li>
               <li>Vue.js</li>
               <li>Next.js</li>
@@ -59,18 +57,16 @@ export default function AboutSection() {
               <li>Node.js</li>
               <li>MongoDB</li>
               <li>Mongoose</li>
-              <li>Exliress.js</li>
+              <li>Express.js</li>
               <li>MySQL</li>
             </ul>
           </div>
-          <div className={`${styles.skills} ${styles.borderHide}`}>
-            <div className={styles.listTitle}>
-              <h3>Tools</h3>{" "}
-            </div>
+          <div className={styles.skills}>
+            <h3 className={styles.listTitle}>Tools</h3>{" "}
             <ul className={styles.listItems}>
               <li>Git</li>
               <li>GitHub</li>
-              <li>liarcel</li>
+              <li>Parcel</li>
               <li>VsCode</li>
               <li>Figma</li>
             </ul>

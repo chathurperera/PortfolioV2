@@ -3,17 +3,16 @@ import styles from "./work.module.scss";
 import Project from "./Project";
 import SectionTitle from "@/Components/SectionTitle/SectionTitle";
 import Filter from "./Filter";
-import {projectData} from "../../../data";
+import { projectData } from "../../../data";
 
 function WorkSection() {
-  
   const [projects, setProjects] = useState(projectData);
   const [filtered, setFiltered] = useState(projectData);
-  const [activeSkill, setActiveSkill] = useState('All');
+  const [activeSkill, setActiveSkill] = useState("All");
 
   return (
     <section id="work" className={styles.workSection}>
-      <SectionTitle title='Work' />
+      <SectionTitle title="Work" />
       <Filter
         projects={projects}
         setFiltered={setFiltered}
