@@ -41,7 +41,7 @@
       position: relative;
       padding-top: 0px;
       font-size: 30px;
-      font-family: 'Satoshi-Variable';
+      font-family: "Satoshi-Variable";
       color: rgba(235, 230, 230, 0.877);
       &::before {
         content: "";
@@ -58,7 +58,7 @@
         right: 0;
         width: 100%;
       }
-      @media (max-width:500px) {
+      @media (max-width: 500px) {
         font-size: 22px;
       }
     }
@@ -109,4 +109,11 @@
     position: static;
     font-size: 14px;
   }
+}
+
+@media (max-width: 560px) {
+  .footer .footerHeading {
+    font-size: 55px;
+  }
+
 }
