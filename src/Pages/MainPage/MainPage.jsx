@@ -10,7 +10,7 @@ const MainPage = () => {
   return (
     <>
       <CustomCursor />
-      <NavBar />
+      {/* <NavBar /> */}
       <HeroSection />
       <AboutSection />
       <WorkSection />

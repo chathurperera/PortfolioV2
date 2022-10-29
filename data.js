@@ -1,12 +1,12 @@
-import cryptoMockup from "@/Assets/projectMockups/cryptoMockup.png";
-import appleMockup from "@/Assets/projectMockups/appleMockup.png";
-import edieMockup from "@/Assets/projectMockups/edieMockup.png";
-import california from "@/Assets/projectMockups/california.png";
-import netflixMockup from "@/Assets/projectMockups/netlfixMockup.png";
-import onCord from "@/Assets/projectMockups/onCord.png";
-import airbnb from "@/Assets/projectMockups/airbnb.png";
-import portfolioV1 from "@/Assets/projectMockups/portfolioV1.png";
-import onboard from "@/Assets/projectMockups/onboard.png";
+import cryptoMockup from "@/Assets/projectMockups/cryptoPriceTracker.jpg";
+import appleMockup from "@/Assets/projectMockups/appleWebsiteClone.jpg";
+import edieMockup from "@/Assets/projectMockups/edie.jpg";
+import california from "@/Assets/projectMockups/california.jpg";
+import netflixMockup from "@/Assets/projectMockups/netflix.jpg";
+import onCord from "@/Assets/projectMockups/concord.jpg";
+import airbnb from "@/Assets/projectMockups/airbnbClone.jpg";
+import portfolioV1 from "@/Assets/projectMockups/portfoliov1.jpg";
+import onboard from "@/Assets/projectMockups/onborad.jpg";
 
 export const projectData = [
   {
